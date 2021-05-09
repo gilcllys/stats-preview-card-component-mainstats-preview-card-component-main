@@ -5,21 +5,23 @@ body{
     color: white;
     margin: 0;
     max-width: 1440px;
-    background-color: rgb(81, 62, 99);
+    background-color:  #1b1938;
 }
 
 h1{
     font-family: 'Inter', sans-serif;
+    color:  hsl(0, 0%, 100%);
 }
 ul li {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+    hsla(0, 0%, 100%, 0.6)
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75) ;
 }
 
 strong{
-    color: hsl(277, 64%, 61%);
+    color: #aa5cdb;
 }
 
-picture > img{
-    filter: drop-shadow(rgb(170, 92, 219));
-}
