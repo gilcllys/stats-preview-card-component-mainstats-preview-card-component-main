@@ -15,10 +15,16 @@ h1{
 ul li {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    hsla(0, 0%, 100%, 0.6)
+    color :hsl(0, 0%, 100%);
 }
 p{
-    color: hsla(0, 0%, 100%, 0.75) ;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+}
+ ul li > p{
+    margin: 3px auto;
+    font-size: 10px;
 }
 
 strong{
