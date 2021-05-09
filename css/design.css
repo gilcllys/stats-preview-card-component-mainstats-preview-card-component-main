@@ -7,23 +7,22 @@ body{
 
 main{
     background-color: hsl(244, 38%, 16%);
-    border: 1px solid yellow;
     display:flex ;
     width: fit-content;
-    margin:50px 0 50px 0 ;
+    height: 447px;
+    margin: 50px 0 50px 0;
 }
 /*Containers*/
 div.container{
-    border: 1px solid yellow;
+    padding: 0;
+    height: 447px;
 }
 div.container > h1{
-    border: 1px solid yellow;
     width: fit-content;
     margin: 10px auto;
 }
 
 div.container2 {
-    border: 1px solid yellow;
     width: 55%;
     margin: 65px auto;
 
@@ -32,13 +31,11 @@ div.container2 {
 
 /*list*/
 ul{
-    border: 1px solid yellow;
     width: fit-content;
     margin: auto;
     padding: 0;
 }
 ul li{
-    border: 1px solid yellow;
     display: inline-block;
     padding: 10px;
     margin: 0 25px 0 25px;
@@ -49,8 +46,42 @@ li > h2, li > p{
 }
 /*end*/
 
+/*img*/
+picture{
+    margin: 0px;
+}
+img{
+    margin: 1px auto;
+    padding: 0;
+    height: fit-content;
+}
+/*fim*/
+
+/*Border radius */
+
+
+
+
+
 
 @media only screen and (max-width:  475px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding: 0;
+    }
+    img{
+        background-image: url();
+    }
+}
+
+@media only screen and (max-width:  1300px){
     main{
         display: flex;
         flex-direction: column-reverse;
