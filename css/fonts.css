@@ -30,3 +30,15 @@ strong{
     color: #aa5cdb;
 }
 
+@media only screen and (max-width:  475px){
+    	
+    h1,p{
+        text-align: center;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}

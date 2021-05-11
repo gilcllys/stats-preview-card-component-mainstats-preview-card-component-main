@@ -11,6 +11,7 @@ main{
     width: fit-content;
     height: 447px;
     margin: 50px 0 50px 0;
+    border-radius: 10px;
 }
 /*Containers*/
 div.container{
@@ -46,51 +47,52 @@ li > h2, li > p{
 }
 /*end*/
 
-/*img*/
-picture{
-    margin: 0px;
-}
+/*image*/
 img{
-    margin: 1px auto;
-    padding: 0;
-    height: fit-content;
+    border-radius: 0 10px 10px 0;
 }
-/*fim*/
+/*end*/
 
-/*Border radius */
-
-
-
-
-
-
-@media only screen and (max-width:  475px){
+@media only screen and (min-width:  370px){
     main{
+        margin:1px auto ;
+        height: fit-content;
+        width: 320px;
         display: flex;
+        border-radius: 0 0 10px 10px;
+
         flex-direction: column-reverse;
     }
     ul li {
         display: flex;
         flex-direction: column;
     }
+
     body{
-        padding: 0;
+        width: 320px;
+        height: 560px;
+        padding: 25px;
+        margin: 0;
+    }
+
+    div.container{
+        height: fit-content;
+    }
+    div.container2{
+        width: 300px;
+        margin: 15px auto;
     }
     img{
-        background-image: url();
+        border-radius: 10px 10px 0 0 ;
+        margin-top: 0;
     }
 }
 
-@media only screen and (max-width:  1300px){
+@media only screen and (min-width:  1000px){
     main{
-        display: flex;
+        margin: 0;
         flex-direction: column-reverse;
-    }
-    ul li {
-        display: flex;
-        flex-direction: column;
-    }
-    body{
-        padding: 0;
+        height: fit-content;
+        width: fit-content;
     }
 }
