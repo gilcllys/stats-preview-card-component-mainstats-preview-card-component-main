@@ -30,15 +30,19 @@ strong{
     color: #aa5cdb;
 }
 
-@media only screen and (max-width:  475px){
+@media only screen and (max-width:  470px){
     	
     h1,p{
         text-align: center;
     }
     h1{
-        font-size: 20px;
+        font-size: 15px;
+        width: 250px;
+        margin: 1px auto;
     }
-    p{
-        font-size: 10px;
+    div.container2 > p{
+        font-size: 8px;
+        width: 200px;
+        margin: 1px auto;
     }
 }

@@ -8,6 +8,7 @@ body{
 main{
     background-color: hsl(244, 38%, 16%);
     display:flex ;
+    flex-direction: row;
     width: fit-content;
     height: 447px;
     margin: 50px 0 50px 0;
@@ -51,13 +52,19 @@ li > h2, li > p{
 img{
     border-radius: 0 10px 10px 0;
 }
+picture{
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+}
 /*end*/
 
-@media only screen and (min-width:  370px){
+@media only screen and (max-width:  470px){
     main{
-        margin:1px auto ;
+        margin: 10px auto ;
         height: fit-content;
-        width: 320px;
+        width: 280px;
         display: flex;
         border-radius: 0 0 10px 10px;
 
@@ -69,10 +76,8 @@ img{
     }
 
     body{
-        width: 320px;
-        height: 560px;
-        padding: 25px;
-        margin: 0;
+        padding:25px;
+        margin: 1px auto;
     }
 
     div.container{
@@ -86,13 +91,5 @@ img{
         border-radius: 10px 10px 0 0 ;
         margin-top: 0;
     }
-}
 
-@media only screen and (min-width:  1000px){
-    main{
-        margin: 0;
-        flex-direction: column-reverse;
-        height: fit-content;
-        width: fit-content;
-    }
 }
